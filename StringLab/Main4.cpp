@@ -13,6 +13,8 @@ using namespace std;
 //символов.Не забудьте, что слова должны разделяться
 //пробелами.
 
+
+// удаляем лишние пробелы
 void removeSpaces(std::string& str)
 {
 	str.erase(
@@ -27,6 +29,7 @@ int main() {
 	vector<string> myVector;
 	ifstream file("./input1.txt");
 
+	// в вектор записываем слова
 	if (file.is_open()) {
 		cout << "Текст из файла:\n";
 		while (getline(file, mystring, ' ')) {
@@ -40,6 +43,7 @@ int main() {
 		return -1;
 	}
 
+	// проходим по всем словам и если размер слова >= 10, то стираем его
 	for (int i = 0; i < myVector.size(); i++) {
 		if (myVector[i].size() >= 10) {
 			myVector[i].erase();
@@ -48,6 +52,8 @@ int main() {
 	for (int i = 0; i < myVector.size(); i++) {
 		stringOut += myVector[i] + " ";
 	}
+
+	// удаляем лишние пробелы функцией removeSpaces
 	removeSpaces(stringOut);
 	cout << stringOut << endl;
 	file.close();

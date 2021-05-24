@@ -16,6 +16,7 @@
 //	setlocale(0, "");
 //	ifstream file("./input1.txt");
 //	string mystring;
+//	// контейнер map с переводами слов
 //	map <string, string> mapTranslate = { { "hello", "привет" },
 //		{ "darkness", "тьма" },
 //		{ "my", "мой" },
@@ -23,6 +24,7 @@
 //		{ "talk", "разговаривать"},
 //		{ "you", "ты/тобой"} };
 //
+//	// чтение из файла и сравнение с контейнером (map) переводов
 //	if (file.is_open()) {
 //		cout << "Файл открылся!\n";
 //		while (getline(file, mystring, ' ')) {

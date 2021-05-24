@@ -26,12 +26,14 @@ int main()
 		return -1;
 	}
 
+	// проходим по всем буквам и увеличиваем счетчик повторений в контейнере map (буква - количество)
 	while (file >> c) {
 		if (c >= 'a' && c <= 'z') {
-			mapLetter[(c)]++; count++;
+			mapLetter[c]++; count++;
 		}
 	}
 
+	// выводим весь контейнер map 
 	for (auto k : mapLetter)
 		cout << k.first << " - " << k.second << "\n";
 

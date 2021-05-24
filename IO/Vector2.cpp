@@ -19,6 +19,7 @@
 //
 //	cout << "¬ведите элементы первого вектора:\n";
 //
+//	//запись в вектор 1 из консоли
 //	while (cin >> buffer) {
 //		myvector1.push_back(buffer);
 //	}
@@ -31,7 +32,7 @@
 //	cin.ignore(numeric_limits<int>::max(), '\n');
 //
 //	cout << "\n¬ведите элементы второго вектора:\n";
-//
+//	//запись в вектор 2 из консоли
 //	while (cin >> buffer) {
 //		myvector2.push_back(buffer);
 //	}
@@ -41,6 +42,7 @@
 //		return 0;
 //	}
 //
+//	//вывод элементов вектора
 //	cout << "¬ектор 1:\n";
 //	for (auto x : myvector1)
 //		cout << x << " ";
@@ -49,13 +51,14 @@
 //	for (auto x : myvector2)
 //		cout << x << " ";
 //
-//
+//	// создаем вектор 3 с размером, равным сумме размеров двух других
 //	vector<int> myvector3 (myvector1.size() + myvector2.size());
 //	int sz, vector_size1, vector_size2, vector_size3;
 //	vector_size1 = myvector1.size();
 //	vector_size2 = myvector2.size();
 //	vector_size3 = myvector3.size();
 //
+//	// записываем значени€ череду€ из двух других векторов
 //	if (vector_size1 == vector_size2) {
 //		for (int i = 0; i < vector_size1; i++) {
 //			myvector3[2 * i] = myvector1[i];

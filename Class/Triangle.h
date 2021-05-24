@@ -24,4 +24,4 @@ public:
     void compare(Triangle o2);
 };
 
-#endif // LIBRARYBOOK_H
+#endif // TRIANGLE_H

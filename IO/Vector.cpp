@@ -18,6 +18,7 @@
 //	int max=0, min=0;
 //	cout << "Введите элементы вектора:\n";
 //
+//	//запись в вектор из консоли
 //	while (cin >> buffer) {
 //		myvector.push_back(buffer);
 //	}
@@ -27,13 +28,16 @@
 //		return 0;
 //	}
 //
+//	//вывод элементов вектора
 //	cout << "Вектор:\n";
 //	for (auto x : myvector)     
 //		cout << x << " ";
 //
+//	//max и min - первые элементы вектора
 //	max = myvector[0];
 //	min = myvector[0];
 //
+//	//проход по всем элементам вектора и поиск max и min
 //	for (auto x : myvector) {
 //		if (x > max) {
 //			max = x;

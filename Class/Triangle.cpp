@@ -8,6 +8,7 @@ Triangle::Triangle(double cathet_01, double cathet_02)
     this->cathet_02 = cathet_02;
 }
 
+// информация о треугольнике
 void Triangle::printInfo(int i)
 {
     cout << "Треугольник " << i << endl;
@@ -16,6 +17,7 @@ void Triangle::printInfo(int i)
 
 }
 
+//печать гипотенузы
 void Triangle::printHypotenuse(int i)
 {
     double hypo = 0.0;
@@ -24,6 +26,7 @@ void Triangle::printHypotenuse(int i)
     cout << "Гипотенуза треугольника " << i << ": " << hypo << endl;
 }
 
+//печать градусной меры
 void Triangle::printDegree(int i)
 {
     const double pi = 3.1415;
@@ -35,6 +38,7 @@ void Triangle::printDegree(int i)
     cout << "У треугольника " << i << " Угол " << "a: " << a << " Угол b: " << b << endl;
 }
 
+//печать синуса углов
 void Triangle::printSin(int i)
 {
     double a, b, hypo = 0.0;
@@ -46,6 +50,7 @@ void Triangle::printSin(int i)
     cout << "У треугольника " << i << " Синус угла " << "a: " << a << " Синус угла b: " << b << endl;
 }
 
+//печать косинуса углов
 void Triangle::printCos(int i)
 {
     double a, b, hypo = 0.0;
@@ -57,6 +62,7 @@ void Triangle::printCos(int i)
     cout << "У треугольника " << i << " Косинус угла " << "a: " << a << " Косинус угла b: " << b << endl;
 }
 
+//печать тангенса углов
 void Triangle::printTg(int i)
 {
     double a, b;
@@ -67,6 +73,7 @@ void Triangle::printTg(int i)
     cout << "У треугольника " << i << " Тангенс угла " << "a: " << a << " Тангенс угла b: " << b << endl;
 }
 
+//печать радиуса вписанной окружности
 void Triangle::printRadIn(int i)
 {   
     double r, hypo = 0.0;
@@ -76,6 +83,7 @@ void Triangle::printRadIn(int i)
     cout << "Радиус вписанной окружностиЫ треугольника " << i << ": " << r << endl;
 }
 
+//печать радиуса описанной окружности
 void Triangle::printRadOut(int i)
 {
     double r, hypo = 0.0;
@@ -85,12 +93,13 @@ void Triangle::printRadOut(int i)
     cout << "Радиус описанной окружности треугольника " << i << ": " << r << endl;
 }
 
+//сравнение двух треугольников на равенство
 void Triangle::compare(Triangle o2)
 {
-    if (cathet_01 = o2.getCathet_01() && cathet_02 == o2.getCathet_02()) {
+    if (cathet_01 == o2.getCathet_01() && cathet_02 == o2.getCathet_02()) {
         cout << "Треугольники равны" << endl;
     }
-    else if (cathet_01 = o2.getCathet_02() && cathet_02 == o2.getCathet_01()) {
+    else if (cathet_01 == o2.getCathet_02() && cathet_02 == o2.getCathet_01()) {
         cout << "Треугольники равны" << endl;
     }
     else {

@@ -19,6 +19,8 @@ template <typename Stream>
 //каждом треугольнике и результаты работы методов.Проверьте,
 //являются ли треугольники равныими.Результат выведите на
 //консоль.
+
+// проверка на правильный ввод числа из файла, если введена буква, то она становится 0
 bool read_num(Stream& stream, double& number)
 {
 	char c = 0;
@@ -59,6 +61,7 @@ int main()
 		return -1;
 	}
 
+	// считываем числа из файла и записываем в вектор
 	while (!file.eof()) {
 		if (read_num(file, num)) {
 			myvector.push_back(num);
@@ -77,9 +80,11 @@ int main()
 		return -1;
 	}
 
+	// создаем два треугольника с катетами = значениями из вектора
     Triangle triangle1(myvector[0], myvector[1]);
 	Triangle triangle2(myvector[2], myvector[3]);
 
+	// вывод функций
     triangle1.printInfo(1);
 	triangle1.printHypotenuse(1);
 	triangle1.printDegree(1);

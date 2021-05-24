@@ -11,11 +11,13 @@ using namespace std;
 
 int main() {
 	setlocale(0, "");
+	int count = 0;
 	string mystring;
 	ifstream file;
-	int count = 0;
 	file.open("./input1.txt");
 
+	// считываем слова из файла и выводим их длину (mystring.lenght())
+	// увеличиваем счетчик слов
 	if (file.is_open()) {
 		cout << "Текст из файла:\n";
 		while (getline(file, mystring, ' ')) {
